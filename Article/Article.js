@@ -138,6 +138,7 @@ function createArticle(property) {
 
   expand.addEventListener('click', event => {
     article.classList.toggle('article-open');
+    expand.textContent === 'expand' ? expand.textContent = 'minimize' : expand.textContent = 'expand';
   })
 
   return article;
